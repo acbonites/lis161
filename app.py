@@ -13,9 +13,10 @@ def movies(genre):
     return render_template("movies.html", genre=genre, films=films_list)
 
 @app.route('/movies/<int:film_id>')
-def film(film_id):
+def movie(film_id):
     film = read_films_by_film_id(film_id)
-    return render_template("film.html", film=film)
+    if film:
+        return render_template("film.html", film=film)
 
 @app.route('/register')
 def register():
