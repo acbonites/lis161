@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="reg-head"> Do you have some Updates? </h1>
+
+<form action="{{ url_for('update') }}" method="post">
+
+    <input type="hidden" name="film_id" value="{{ film.id }}">
+    <label for="f_genre"> Genre: </label>
+    <select name="gnere" id="genre" required>
+        <option disabled selected value>...</option>
+        
+        {% if film.genre == "action" %}
+        <option value="action" selected> Action </option>
+        <option value="comedy"> Comedy </option>
+        <option value="drama"> Drama </option>
+        <option value="horror"> Horror </option>
+        <option value="romance"> Romance </option>
+        <option value="sci-fi"> Sci-fi </option>
+        <option value="suspense"> Suspense </option>
+        <option value="thriller"> Thriller </option>
+        
+        {% elif film.genre == "comedy" %}
+        <option value="action"> Action </option>
+        <option value="comedy" selected> Comedy </option>
+        <option value="drama"> Drama </option>
+        <option value="horror"> Horror </option>
+        <option value="romance"> Romance </option>
+        <option value="sci-fi"> Sci-fi </option>
+        <option value="suspense"> Suspense </option>
+        <option value="thriller"> Thriller </option>
+        
+        {% elif film.genre == "drama" %}
+        <option value="action"> Action </option>
+        <option value="comedy"> Comedy </option>
+        <option value="drama" selected> Drama </option>
+        <option value="horror"> Horror </option>
+        <option value="romance"> Romance </option>
+        <option value="sci-fi"> Sci-fi </option>
+        <option value="suspense"> Suspense </option>
+        <option value="thriller"> Thriller </option>
+
+        {% elif film.genre == "horror" %}
+        <option value="action"> Action </option>
+        <option value="comedy"> Comedy </option>
+        <option value="drama"> Drama </option>
+        <option value="horror" selected> Horror </option>
+        <option value="romance"> Romance </option>
+        <option value="sci-fi"> Sci-fi </option>
+        <option value="suspense"> Suspense </option>
+        <option value="thriller"> Thriller </option>
+
+        {% elif film.genre == "romance" %}
+        <option value="action"> Action </option>
+        <option value="comedy"> Comedy </option>
+        <option value="drama"> Drama </option>
+        <option value="horror"> Horror </option>
+        <option value="romance" selected> Romance </option>
+        <option value="sci-fi"> Sci-fi </option>
+        <option value="suspense"> Suspense </option>
+        <option value="thriller"> Thriller </option>
+
+        {% elif film.genre == "sci-fi" %}
+        <option value="action"> Action </option>
+        <option value="comedy"> Comedy </option>
+        <option value="drama"> Drama </option>
+        <option value="horror"> Horror </option>
+        <option value="romance"> Romance </option>
+        <option value="sci-fi" selected> Sci-fi </option>
+        <option value="suspense"> Suspense </option>
+        <option value="thriller"> Thriller </option>
+
+        {% elif film.genre == "suspense" %}
+        <option value="action"> Action </option>
+        <option value="comedy"> Comedy </option>
+        <option value="drama"> Drama </option>
+        <option value="horror"> Horror </option>
+        <option value="romance"> Romance </option>
+        <option value="sci-fi"> Sci-fi </option>
+        <option value="suspense" selected> Suspense </option>
+        <option value="thriller"> Thriller </option>
+
+        {% elif film.genre == "thriller" %}
+        <option value="action"> Action </option>
+        <option value="comedy"> Comedy </option>
+        <option value="drama"> Drama </option>
+        <option value="horror"> Horror </option>
+        <option value="romance"> Romance </option>
+        <option value="sci-fi"> Sci-fi </option>
+        <option value="suspense"> Suspense </option>
+        <option value="thriller" selected> Thriller </option>
+
+        {% endif %}
+    </select>
+
+    <br></br>
+
+    <label for="f_title"> Movie Title: </label>
+    <input type="text" name="film_title" id="f_title" value="{{ film.title }}" required><br><br>
+
+    <label for="f_year"> Year: </label>
+    <input type="number" name="film_year" id="f_year" value="{{ film.year }}"><br><br>
+
+    <label for="f_cast"> Cast: </label>
+    <input type="text" name="film_cast" id="f_cast" value="{{ film.cast }}"><br><br>
+
+    <label for="f_director"> Director: </label>
+    <input type="text" name="film_director" id="f_director" value="{{ film.director }}"><br><br>
+    
+    
+    <label for="f_url"> Movie Poster URL: </label>
+    <input type="url" name="film_url" id="f_url" value="{{ film.url }}"><br>
+    
+    <label for="f_sum"> Summary: </label><br>
+    <textarea name="film_sum" cols="30" rows="10"> {{ film.summary }} </textarea><br>
+    <input type="submit" value="Update">
+</form>
+
+{% endblock %}

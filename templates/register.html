@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> Share Your Beloved Film! </h1>
+
+<form action="{{ url_for('processing') }}" method="post">
+
+    <label for="f_genre"> Genre: </label>
+    <select name="genre" id="f_genre" required>
+        <option disabled selected value>...</option>
+        <option value="action"> Action </option>
+        <option value="comedy"> Comedy </option>
+        <option value="drama"> Drama </option>
+        <option value="horror"> Horror </option>
+        <option value="romance"> Romance </option>
+        <option value="sci-fi"> Sci-fi </option>
+        <option value="suspense"> Suspense </option>
+        <option value="thriller"> Thriller </option>
+    </select><br><br>
+    
+    <label for="f_title"> Movie Title: </label>
+    <input type="text" name="pet_name" id="p_name" required><br><br>
+    
+    <label for="f_year"> Year Released: </label>
+    <input type="number" name="film_year" id="f_year"><br><br>
+
+    <label for="f_cast"> Cast: </label>
+    <input type="text" name="film_cast" id="f_cast"><br><br>
+
+    <label for="f_director"> Director: </label>
+    <input type="text" name="film_director" id="f_director"><br><br>
+    
+    <label for="f_url"> Movie Poster URL:</label>
+    <input type="url" name="film_url" id="f_url"><br>
+    
+    <label for="f_sum"> Summary: </label> <br>
+    <textarea name="film_sum" placeholder="Tell something about your film..." cols="30" rows="10"></textarea><br>
+    <input type="submit" value="Action!">
+</form>
+
+{% endblock %}

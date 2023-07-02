@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+</h1> {{film.title}} </h1>
+<img src="{{film.url}}">
+<p> {{film.year}} </p>
+<p> {{film.cast}} </p>
+<p> {{film.director}} </p>
+<p> {{film.summary}} </p>
+
+<form action="{{ url_for('modify') }}" method="post">
+    <input type="hidden" name="film_id" value="{{ film``.id }}">
+    <input class="btn btn-secondary" type="submit" name="modify" value="edit"></input>
+    <input class="btn btn-danger" type="submit" name="modify" value="delete"></input>
+</form>
+
+{% endblock %}

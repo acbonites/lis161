@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+</h1> {{genre}} Movies </h1>
+
+<ul>
+    {% for film in films %}
+    <button class='image-button'><a href = "movies/{{film.id}}"> {{film.title}} </a></button>
+    {% endfor %}
+</ul>
+
+{% endblock %}
