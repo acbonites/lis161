@@ -2,11 +2,15 @@
 
 {% block content %}
 
-</h1> {{genre}} Movies </h1>
+<h1>{{ genre }} Movies</h1>
 
 <ul>
     {% for film in films %}
-    <button class='image-button'><a href = "movies/{{film.id}}"> {{film.title}} </a></button>
+    <li>
+        <button class='image-button'>
+            <a href="{{ url_for('movie', film_id=film.id) }}">{{ film.title }}</a>
+        </button>
+    </li>
     {% endfor %}
 </ul>
 
