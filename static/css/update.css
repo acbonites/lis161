@@ -1,0 +1,85 @@
+.reg-head{
+    color: #DDA01D;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 40px
+  }
+
+
+.update {
+    color: #FFEDCB;
+    font-family: 'Franklin Gothic Medium';
+    margin-left: 8px;
+}
+
+input[type=text], select {
+    background-color: #FFEDCB;
+    border-color: #DDA01D;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+input[type=number] {
+    background-color: #FFEDCB;
+    border-color:#DDA01D;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+
+input[type=url] {
+    background-color: #FFEDCB;
+    border-color: #DDA01D;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.film {
+    color: #FFEDCB;
+    font-family: 'Franklin Gothic Medium';
+    margin-left: 8px;
+}
+
+textarea {
+    background-color: #FFEDCB;
+    border-color: #DDA01D;
+    color: #000103;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color:#000103;
+}
+
+p.fun {
+    color: #FFEDCB;
+    font-family: 'Lucida Sans';
+    font-size: 11;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+input[type=submit] {
+    display: inline-block;
+    background-color: #DDA01D;
+    color: #FFEDCB;
+    border: none;
+    height: 45px; width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+    transition-duration: 0.4s;
+    margin: 8px 0;
+    padding: 14px 20px;
+}
+
+.g-bttn:hover {
+    background-color: #DDA01D;
+}

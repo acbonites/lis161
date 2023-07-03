@@ -1,0 +1,128 @@
+body {
+    background-color: #000000
+}
+
+p{
+    color: #FFEDCB;
+}
+
+.img-ac {
+    background-image: url('https://stylecaster.com/wp-content/uploads/2020/07/the-old-guard.png?w=960&h=540&crop=1');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+
+.img-co{
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/best-comedy-movies-of-all-time-643874f7a6b30.png?crop=1.00xw:1.00xh;0,0&resize=1200:*');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+.img-dr{
+    background-image: url('https://unitingartists.org/wp-content/uploads/2020/07/Drama-800x445.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+.img-hor{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/56f4179737013bbfb02fd393/1541009091902-A4RZBSDINKGRZP9ZRZVZ/image-asset.png?format=1000w');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+.img-rom{
+    background-image: url('https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2021/02/13034009/Romantic-films.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+.img-sci{
+    background-image: url('https://images.csmonitor.com/csm/2016/02/966325_1_02-23martian_standard.png?alias=standard_900x600');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+.img-sus{
+    background-image: url('https://www.guidingtech.com/wp-content/uploads/Suspense-Movies-on-Netflix-4_4d470f76dc99e18ad75087b1b8410ea9.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}
+
+.img-thr{
+    background-image: url('https://moviesandmania.com/wp-content/uploads/2020/11/See-For-Me-movie-film-thriller-home-invasion-2020-Skyler-Davenport.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 150px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+    color: white;
+}

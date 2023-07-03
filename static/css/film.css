@@ -1,0 +1,59 @@
+.title{
+  color: #DDA01D;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 60px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 30px;
+}
+
+ul.film {
+  font-family: 'Franklin Gothic Medium';
+  font-weight: bold;
+  font-size: 20px;
+  width: min(100%, 60rem);
+  overflow: hidden;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 4rem);
+  list-style: none;
+  perspective: 1000px;
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+ul.film li.card{
+  position: relative;
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  background-color: var(--bg-color);
+  background-image: linear-gradient(to right, rgb(0 0 0 / .15), transparent);
+  transform-style: preserve-3d;
+  color: var(--color);
+  
+  display: grid;
+  grid-template: 'icon' 'title' 'content';
+  row-gap: 0.5rem;
+  column-gap: 2rem;
+}
+
+ul.film li.card .title{
+  grid-area: title;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+ul.film li.card .content{
+  text-align: center;
+  grid-area: content;
+}
+
+form.film {
+  text-align: center;
+}

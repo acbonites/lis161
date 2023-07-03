@@ -1,0 +1,32 @@
+.m_h1 {
+    text-transform: capitalize;
+    color: #DDA01D;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 80px;
+    margin-left: 10px;
+    margin-top: 40px
+  }
+
+  .m-button {
+    background-color: #DDA01D;
+    text-align: center;
+    border: none;
+    height: 45px;
+    width: 180px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+    transition-duration: 0.4s;
+    float: inline;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    
+}
+.m-button:hover {
+        background-color: #e8be63;
+}   
+
+
+  
