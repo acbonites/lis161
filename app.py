@@ -42,9 +42,10 @@ def modify():
         film_id = request.form["film_id"]
         film = read_films_by_film_id(film_id)
         return render_template('update.html', film=film)
-
-    elif request.form["modify"] =="delete":
-        pass
+    elif request.form["modify"] == "delete":
+        film_id = request.form["film_id"]
+        delete_film(film_id)
+        return redirect(url_for('index'))
 
 @app.route('/update', methods=['post'])
 def update():
@@ -59,6 +60,12 @@ def update():
     }
     update_film(film_data)
     return redirect(url_for('film', film_id=request.form['film_id']))
+
+@app.route('/search', methods=['get'])
+def search():
+    query = request.args.get('query', '')
+    results = search_film(query)
+    return render_template('search.html', query=query, results=results)
 
 if __name__ == "__main__":
     app.run(debug=True)
