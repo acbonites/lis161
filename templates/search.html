@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="search">
+  <h1>Search Results for "{{ query }}"</h1>
+  {% if results %}
+    <ul class="search-results">
+      {% for film in results %}
+        <li>
+          <h2>{{ film.genre }} - {{ film.title }}</h2>
+          <img src="{{ film.url }}" alt="{{ film.genre }} {{ film.title }}">
+          <p>Year Released: {{ film.year }}</p>
+          <p>Cast: {{ film.cast }}</p>
+          <p>Director: {{ film.director }}</p>
+          <p>Summary: {{ film.summary }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Oh no, the information that you're currently looking for is not available.</p>
+  {% endif %}
+</div>
+{% endblock %}
