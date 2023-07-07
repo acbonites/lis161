@@ -2,30 +2,12 @@
 
 {% block content %}
 
-<h1 class="title" align="center">{{ film.title }}</h1>
-<img src="{{ film.url }}"><br>
-
-<ul class="film">
-<li class="card" style="--color: black; --bg-color:#FFEDCB">
-    <div class="info">Year Released</div>
-    <div class="content">{{ film.year }}</div>
-  </li>
-
-  <li class="card" style="--color: black; --bg-color:#DDA01D">
-    <div class="info">Cast</div>
-    <div class="content">{{ film.cast }}</div>
-  </li>
-
-  <li class="card" style="--color: black; --bg-color:#D1EAE7">
-    <div class="info">Director</div>
-    <div class="content">{{ film.director }}</div>
-  </li>
-
-  <li class="card" style="--color: black; --bg-color:#F9F871">
-    <div class="info">Summary</div>
-    <div class="content">{{ film.summary }}</div>
-  </li>
-</ul>
+<h1>{{ film.title }}</h1>
+<img src="{{ film.url }}">
+<p>{{ film.year }}</p>
+<p>{{ film.cast }}</p>
+<p>{{ film.director }}</p>
+<p>{{ film.summary }}</p>
 
 <form action="{{ url_for('modify') }}" method="post">
     <input type="hidden" name="film_id" value="{{ film.id }}">
