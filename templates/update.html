@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<h1 class="reg-head"> Do you have some updates? </h1>
+<h1 class="reg-head"> Do you have some Updates? </h1>
 
 <form action="{{ url_for('update') }}" method="post">
 
     <input type="hidden" name="film_id" value="{{ film.id }}">
-     <label class ="update" for="f_genre"> Genre: </label>
+    <label for="f_genre"> Genre: </label>
     <select name="genre" id="genre" required>
         <option disabled selected value>...</option>
         
@@ -96,25 +96,26 @@
 
     <br></br>
 
-    <label class="update" for="f_title"> Movie Title: </label>
+    <label for="f_title"> Movie Title: </label>
     <input type="text" name="film_title" id="f_title" value="{{ film.title }}" required><br><br>
 
-    <label class="update" for="f_year"> Year: </label>
+    <label for="f_year"> Year: </label>
     <input type="number" name="film_year" id="f_year" value="{{ film.year }}"><br><br>
 
-    <label class="update" for="f_cast"> Cast: </label>
+    <label for="f_cast"> Cast: </label>
     <input type="text" name="film_cast" id="f_cast" value="{{ film.cast }}"><br><br>
 
-    <label class="update" for="f_director"> Director: </label>
+    <label for="f_director"> Director: </label>
     <input type="text" name="film_director" id="f_director" value="{{ film.director }}"><br><br>
     
     
-    <label class="update" for="f_url"> Movie Poster URL: </label>
+    <label for="f_url"> Movie Poster URL: </label>
     <input type="url" name="film_url" id="f_url" value="{{ film.url }}"><br>
     
-    <label class="update" for="f_sum"> Summary: </label><br>
-    <textarea name="film_summary" cols="30" rows="10"> {{ film.summary }} </textarea><br>
+    <label for="f_sum"> Summary: </label><br>
+    <textarea name="film_summary" cols="30" rows="10">{{ film.summary }}</textarea><br>
     <input type="submit" value="Update">
+
 </form>
 
 {% endblock %}
