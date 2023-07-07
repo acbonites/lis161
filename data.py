@@ -46,7 +46,7 @@ def update_film(film_data):
 def delete_film(film_id):
     conn, cur = connect_to_db(db_path)
     query = "DELETE FROM films WHERE id = ?"
-    values = (film_id,)
+    values = (film_id)
     cur.execute(query, values)
     conn.commit()
     conn.close()
