@@ -56,10 +56,12 @@ def update():
         "cast": request.form['film_cast'],
         "director": request.form['film_director'],
         "summary": request.form['film_summary'],
-        "url": request.form['film_url']
+        "url": request.form['film_url'],
+        "film_id": request.form['film_id']  # Use 'film_id' as the key name
     }
+
     update_film(film_data)
-    return redirect(url_for('film', film_id=request.form['film_id']))
+    return redirect(url_for('movie', film_id=request.form['film_id']))
 
 @app.route('/search', methods=['get'])
 def search():
